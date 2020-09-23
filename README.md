@@ -20,9 +20,13 @@ Part of the [commitizen](https://github.com/commitizen/cz-cli) family. Prompts f
 ```json5
 {
 // ...  default values
+    "scripts":{
+      ...
+      "commit": "git-cz"
+    },
     "config": {
         "commitizen": {
-            "path": "./node_modules/cz-conventional-changelog",
+            "path": "cz-conventional-changelog-zh", // 如有问题可以设置此路径:./node_modules/cz-conventional-changelog-zh
             "disableScopeLowerCase": false,
             "disableSubjectLowerCase": false,
             "maxHeaderWidth": 100,
